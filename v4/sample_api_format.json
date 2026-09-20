@@ -1,0 +1,38 @@
+{
+    "api": [
+        {
+            "action": "run-sql-query",
+            "accepts": {
+                "query": "str"
+            },
+            "commands": [
+                "$query"
+            ],
+            "returns": true,
+            "usesql": true,
+            "encode": false,
+            "sendbool": false,
+            "auth": {
+                "needsauth": false,
+                "level": 0
+            }
+        },
+        {
+            "action": "run-sql-nonquery",
+            "accepts": {
+                "query": "str"
+            },
+            "commands": [
+                "$query"
+            ],
+            "returns": false,
+            "usesql": true,
+            "encode": false,
+            "sendbool": false,
+            "auth": {
+                "needsauth": false,
+                "level": 0
+            }
+        }
+    ]
+}
